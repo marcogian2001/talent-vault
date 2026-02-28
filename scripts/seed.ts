@@ -1,14 +1,14 @@
 import fs from 'fs';
 import path from 'path';
-import 'dotenv/config';
-import Database from 'better-sqlite3';
-import { drizzle } from 'drizzle-orm/better-sqlite3';
+import { config } from 'dotenv';
+
+config({ path: '.env.local' });
+import { neon } from '@neondatabase/serverless';
+import { drizzle } from 'drizzle-orm/neon-http';
 import * as schema from '../src/db/schema';
 
-
-const sqlite = new Database(process.env.DATABASE_URL || 'sqlite.db');
-const db = drizzle(sqlite, { schema });
-
+const sql = neon(process.env.DATABASE_URL!);
+const db = drizzle(sql, { schema });
 function parseOpportunityBlock(block: string) {
   const lines = block.split('\n').map(l => l.trim()).filter(l => l !== '');
   if (lines.length < 2) return null;
