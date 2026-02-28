@@ -1,0 +1,603 @@
+Villa 1
+Posizione
+Private Chef
+Struttura
+Villa Eris
+Località
+Italia – Costiera Amalfitana
+Tipologia di Servizio
+Single Service – Stagionale
+ Ospiti
+8
+Alloggio :
+In-House 
+Compenso
+€400/giorno
+Candidati Ora ( pulsante)
+Controproposta
+Invia una Controproposta ( pulsante)
+
+----
+
+Villa 2
+Posizione
+Private Chef
+Struttura
+Villa Papavero
+Località
+Italia – Costiera Amalfitana
+Tipologia di Servizio
+Single Service – Stagionale
+ Ospiti
+12
+Alloggio :
+In-House 
+Compenso
+€700/giorno
+Candidati Ora ( pulsante)
+
+
+---
+
+Villa 3
+Posizione
+Private Chef
+Struttura
+Villa Papavero
+Località
+Italia – Portofino
+Tipologia di Servizio
+Single Service – Stagionale
+ Ospiti
+12
+Alloggio :
+In-House 
+Compenso
+€800/giorno
+Candidati Ora ( pulsante)
+
+
+---
+
+Villa 4
+Posizione
+Private Chef
+Struttura
+Residenza Turistica
+Località
+Italia- venezia 
+Tipologia di Servizio
+Single Service – weekly
+Ospiti
+8
+Alloggio :
+In-House 
+Compenso
+€400/giorno
+Candidati Ora ( pulsante)
+Controproposta
+Invia una Controproposta ( pulsante)
+
+---
+
+Private Residency 1
+Posizione
+Private Chef
+Struttura
+Residenza Privata
+Località
+Italia- venezia 
+Tipologia di Servizio
+Single Service – weekly
+Ospiti
+8
+Alloggio :
+In-House 
+Compenso
+€500/giorno
+Candidati Ora ( pulsante)
+
+---
+Private Residency 2
+Posizione
+Private Chef
+Struttura
+Residenza Privata
+Località
+Italia – Cortina
+Tipologia di Servizio
+Single Service – Stagionale
+ Ospiti
+12
+Alloggio :
+In-House 
+Compenso
+€1100/giorno
+Candidati Ora ( pulsante)
+
+---
+Private Residency 3
+Posizione
+Private Chef
+Struttura
+residenza privata
+Nazione
+svizzera
+Località
+zermatt
+Tipologia di Servizio
+week  Service 
+Numero Massimo Ospiti
+6
+Alloggio
+In-House
+Compenso – Single Service
+€3500 settimana
+Candidati Ora (Pulsante)
+
+---
+Private Residency 4
+Posizione
+Private Chef
+Struttura
+residenza privata
+Nazione
+italia
+Località
+Madonna di campiglio
+Tipologia di Servizio
+week  Service 
+Numero Massimo Ospiti
+6
+Alloggio
+In-House
+Compenso – Single Service
+€3000 settimana
+Candidati Ora (Pulsante)
+
+---
+Private Residency 5
+Posizione
+Private Chef
+Struttura
+residenza privata
+Nazione
+italia
+Località
+cortina
+Tipologia di Servizio
+week  Service 
+Numero Massimo Ospiti
+6
+Alloggio
+In-House
+Compenso – Single Service
+€2300 settimana
+Candidati Ora (Pulsante)
+
+---
+Private Residency 6
+Posizione
+Private Chef
+Struttura
+residenza privata
+Nazione
+italia
+Località
+Firenze
+Tipologia di Servizio
+Single Service 
+Numero Massimo Ospiti
+4
+Alloggio
+In-House
+Compenso – Single Service
+€400 al giorno
+Candidati Ora (Pulsante)
+
+---
+Private Residency 7
+Posizione
+Private Chef
+Struttura
+residenza privata
+Nazione
+italia
+Località
+roma
+Tipologia di Servizio
+Single Service 
+Numero Massimo Ospiti
+4
+Alloggio
+In-House
+Compenso – Single Service
+€600 al giorno
+Candidati Ora (Pulsante)
+
+---
+Private Residency 8
+Posizione
+Private Chef
+Struttura
+residenza privata
+Nazione
+italia
+Località
+roma
+Tipologia di Servizio
+Single Service 
+Numero Massimo Ospiti
+6
+Alloggio
+In-House
+Compenso – Single Service
+€500 al giorno
+Candidati Ora (Pulsante)
+
+---
+Private Residency 9
+Posizione
+Private Chef
+Struttura
+residenza privata
+Nazione
+spagna
+Località
+ibiza
+Tipologia di Servizio
+Single Service – Stagionale
+Numero Massimo Ospiti
+6
+Alloggio
+In-House
+Compenso – Single Service
+€550 al giorno
+Compenso – Stagionale
+€6.000 al mese
+Candidati Ora (Pulsante)
+
+---
+Private Residency 10
+Posizione
+Private Chef
+Struttura
+residenza privata
+Nazione
+italia
+Località
+roma
+Tipologia di Servizio
+Single Service 
+Numero Massimo Ospiti
+4
+Alloggio
+In-House
+Compenso – Single Service
+€400 al giorno
+Candidati Ora (Pulsante)
+
+---
+Private Residency 11
+Posizione
+Private Chef
+Struttura
+KATIKIES VILLA
+Nazione
+Grecia
+Località
+Mykonos
+Tipologia di Servizio
+Single Service – Stagionale
+Numero Massimo Ospiti
+10
+Alloggio
+In-House
+Compenso – Single Service
+€550 al giorno
+Compenso – Stagionale
+€4.000 al mese
+Candidati Ora (Pulsante)
+
+---
+Private Residency 12
+Posizione
+Private Chef
+Struttura
+residenza privata
+Nazione
+italia
+Località
+sardegna
+Tipologia di Servizio
+Single Service – Stagionale
+Numero Massimo Ospiti
+6
+Alloggio
+In-House
+Compenso – Single Service
+€550 al giorno
+Compenso – Stagionale
+€4.000 al mese
+Candidati Ora (Pulsante)
+
+---
+Luxury Resort 1
+Categoria
+Luxury Resort
+Nome
+The Oberoi
+Località
+New Delhi – India
+Tipologia di Contratto
+Full Time
+Compenso
+€5.000 al mese
+Benefit Inclusi
+Vitto e Alloggio Inclusi
+Candidati Ora (Pulsante)
+
+-----
+Luxury Resort 2
+Categoria
+Luxury Resort
+Nome
+The Oberoi
+Località
+Bali – Indonesia
+Tipologia di Contratto
+Full Time
+Livello
+Guest Level
+Compenso
+€7.000 al mese
+Accommodation
+Non Inclusa
+Candidati Ora (Pulsante)
+   
+---
+   Luxury Resort 3
+   Categoria
+Luxury Resort
+Nome
+Bulgari Resorts
+Località
+Bali – Indonesia
+Tipologia di Contratto
+Full Time
+Compenso
+€6.000 al mese
+Benefit Inclusi
+Accommodation Inclusa
+Candidati Ora (Pulsante)
+
+----
+Sushi Restaurant 1
+Categoria
+Ristorante
+Nome
+Nobu – Malibu
+Località
+Malibu – Stati Uniti
+Tipologia di Contratto
+Full Time
+Compenso
+$6.000 – $5.500 al mese
+Candidati Ora (Pulsante)
+
+----
+Sushi Restaurant 2
+Categoria
+Ristorante Omakase
+Nome
+Endo at the Rotunda
+Località
+Londra – Regno Unito
+Tipologia di Contratto
+Full Time
+Tipologia di Servizio
+Omakase Service
+Compenso
+£6.000 al mese
+Candidati Ora (Pulsante)
+   
+   
+----
+Sushi Restaurant 3
+Categoria
+Ristorante
+Nome
+Nimamishima
+Località
+Melbourne – Australia
+Tipologia di Contratto
+Full Time
+Compenso
+AUD 10.000 al mese
+Accommodation
+Non Inclusa
+Candidati Ora (Pulsante)
+
+----
+Expedition Yacht 1
+Imbarcazione
+Willem Spark
+Località
+Danimarca
+Bandiera
+Svedese
+Tipologia di Servizio
+Single Service – Tour
+Numero Massimo Ospiti
+12
+Compenso – Single Service
+€800al giorno
+Candidati Ora (Pulsante)
+   
+
+----
+Expedition Yacht 2
+Imbarcazione
+Planet 9
+Bandiera
+Norvegia
+Tipologia di Servizio
+6 Mesi – Stagionale
+Numero Massimo Ospiti
+10
+Equipaggio
+8 Membri
+Compenso
+€8.400 al mese
+Candidati Ora ( pulsante
+
+   
+   ----
+Expedition Yacht 3
+Imbarcazione
+Luna
+Località
+Caraibi
+Bandiera
+Isole Cayman
+Tipologia di Servizio
+Stagionale
+Numero Massimo Ospiti
+12
+Equipaggio
+12 Membri
+Compenso – Stagionale
+€9.000 al mese
+Candidati Ora (Pulsante)
+   
+    
+   ----
+Private Yacht 1
+Imbarcazione
+Galileo G
+Località
+Italia
+Bandiera
+Italiana
+Tipologia di Servizio
+Single Service
+Numero Massimo Ospiti
+10
+Compenso – Single Service
+€550 al giorno
+Candidati Ora (Pulsante)
+   
+
+     ----
+Private Yacht 2
+Imbarcazione
+Lemon Tree
+Località
+Mediterraneo
+Bandiera
+Italiana
+Tipologia di Servizio
+Single Service – Stagionale
+Numero Massimo Ospiti
+10
+Equipaggio
+8 Membri
+Compenso – Single Service
+€550 al giorno
+Compenso – Stagionale
+€9.000 al mese
+Candidati Ora (Pulsante)
+   
+
+
+     ----
+Private Yacht 3
+Imbarcazione
+Mimi
+Località
+Sardegna
+Bandiera
+Italiana
+Tipologia di Servizio
+Single Service – Stagionale
+Numero Massimo Ospiti
+10
+Compenso – Single Service
+€700 al giorno
+Candidati Ora (Pulsante)
+
+     ----
+Private Yacht 4
+Imbarcazione
+HAIAMI
+Località
+Mediterraneo
+Bandiera
+Italiana
+Tipologia di Servizio
+Single Service – Stagionale
+Numero Massimo Ospiti
+10
+Equipaggio
+6 Membri
+Compenso – Single Service
+€550 al giorno
+Compenso – Stagionale
+€8.000 al mese
+Candidati Ora
+   
+
+        ----
+Private Yacht 5
+Imbarcazione
+Diane
+Località
+Costa Azzurra
+Bandiera
+Inglese
+Tipologia di Servizio
+Single Service – Stagionale
+Numero Massimo Ospiti
+10
+Compenso – Single Service
+€5000 mese
+Candidati Ora (Pulsante)
+   
+
+        ----
+Private Yacht 6
+Imbarcazione
+LOON
+Location
+Florida Keys
+Bandiera
+Cayman ilands
+Tipologia di Servizio
+6 Mesi – Stagionale
+Numero Massimo Ospiti
+10
+Equipaggio
+10 Membri
+Compenso
+€13.000 Mese
+Candidati Ora 
+
+   
+          ----
+Private Yacht 7
+Imbarcazione
+Lemon Tree
+Località
+Mediterraneo
+Bandiera
+Italiana
+Tipologia di Servizio
+6 Mesi – Stagionale
+Numero Massimo Ospiti
+12
+Equipaggio
+7 Membri
+Compenso
+€6.700 al mese
+Candidatura
+Candidati Ora
