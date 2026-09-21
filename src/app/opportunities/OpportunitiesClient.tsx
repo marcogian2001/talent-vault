@@ -3,10 +3,15 @@
 import { useState, useMemo } from "react";
 import Image from "next/image";
 import { parseAsArrayOf, parseAsString, parseAsInteger, useQueryState } from "nuqs";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
+import { Checkbox } from "@/components/ui/checkbox";
 import { Slider } from "@/components/ui/slider";
 import { motion, AnimatePresence } from "framer-motion";
 import ApplicationModal from "@/components/ApplicationModal";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { OPPORTUNITY_CATEGORIES, OPPORTUNITY_ENGAGEMENT_TYPES } from "@/lib/opportunity-options";
 
 interface Opportunity {
   id: string;
@@ -38,8 +43,10 @@ interface Props {
   };
 }
 
-const CATEGORIES = ["Private Residency", "Private Yacht", "Expedition Cruises", "Luxury Resort", "Fine Dining Omakase"];
-const ENGAGEMENT_TYPES = ["Single Service", "Seasonal", "Appointment", "Permanent Position"];
+const MotionCard = motion.create(Card);
+
+const CATEGORIES = OPPORTUNITY_CATEGORIES;
+const ENGAGEMENT_TYPES = OPPORTUNITY_ENGAGEMENT_TYPES;
 
 export default function OpportunitiesClient({ initialData, initialFilters }: Props) {
   const { t, tValue } = useLanguage();
@@ -79,7 +86,7 @@ export default function OpportunitiesClient({ initialData, initialFilters }: Pro
     <div className="flex flex-col lg:flex-row gap-12">
       {/* Sidebar Filters */}
       <aside className="lg:w-1/4 w-full shrink-0 space-y-10">
-        <div className="bg-card/30 border border-border/50 rounded-2xl p-6 backdrop-blur-sm">
+        <Card className="gap-0 bg-card/30 border-border/50 rounded-2xl p-6 shadow-none backdrop-blur-sm">
           <div className="space-y-8">
             {/* Compensation Slider */}
             <div>
@@ -98,11 +105,12 @@ export default function OpportunitiesClient({ initialData, initialFilters }: Pro
               <div className="flex flex-col space-y-2">
                 {CATEGORIES.map(c => (
                   <label key={c} className="flex items-center space-x-3 cursor-pointer group">
-                    <div className={`w-4 h-4 rounded-sm border transition-colors flex items-center justify-center ${categoryQS.includes(c) ? 'bg-primary border-primary' : 'border-border/60 group-hover:border-primary/50'}`}>
-                      {categoryQS.includes(c) && <div className="w-2 h-2 bg-primary-foreground rounded-sm" />}
-                    </div>
+                    <Checkbox
+                      checked={categoryQS.includes(c)}
+                      onCheckedChange={() => toggleFilter(categoryQS, c, setCategoryQS)}
+                      className="group-hover:border-primary/50 data-[state=checked]:group-hover:border-primary"
+                    />
                     <span className="text-sm text-foreground/80">{tValue(c)}</span>
-                    <input type="checkbox" className="hidden" checked={categoryQS.includes(c)} onChange={() => toggleFilter(categoryQS, c, setCategoryQS)} />
                   </label>
                 ))}
               </div>
@@ -114,18 +122,19 @@ export default function OpportunitiesClient({ initialData, initialFilters }: Pro
               <div className="flex flex-col space-y-2">
                 {ENGAGEMENT_TYPES.map(c => (
                   <label key={c} className="flex items-center space-x-3 cursor-pointer group">
-                    <div className={`w-4 h-4 rounded-sm border transition-colors flex items-center justify-center ${engagementQS.includes(c) ? 'bg-primary border-primary' : 'border-border/60 group-hover:border-primary/50'}`}>
-                      {engagementQS.includes(c) && <div className="w-2 h-2 bg-primary-foreground rounded-sm" />}
-                    </div>
+                    <Checkbox
+                      checked={engagementQS.includes(c)}
+                      onCheckedChange={() => toggleFilter(engagementQS, c, setEngagementQS)}
+                      className="group-hover:border-primary/50 data-[state=checked]:group-hover:border-primary"
+                    />
                     <span className="text-sm text-foreground/80">{tValue(c)}</span>
-                    <input type="checkbox" className="hidden" checked={engagementQS.includes(c)} onChange={() => toggleFilter(engagementQS, c, setEngagementQS)} />
                   </label>
                 ))}
               </div>
             </div>
             
           </div>
-        </div>
+        </Card>
       </aside>
 
       {/* Grid */}
@@ -137,14 +146,14 @@ export default function OpportunitiesClient({ initialData, initialFilters }: Pro
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-6">
           <AnimatePresence>
             {filteredData.map(op => (
-              <motion.div 
+              <MotionCard 
                 layout 
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.9 }}
                 transition={{ duration: 0.2 }}
                 key={op.id} 
-                className="group relative bg-card/20 border border-border/50 rounded-2xl overflow-hidden hover:border-primary/50 transition-colors"
+                className="group relative gap-0 py-0 bg-card/20 border-border/50 rounded-2xl overflow-hidden shadow-none hover:border-primary/50 transition-colors"
               >
                 {/* Image Handle */}
                 <div className="relative h-56 w-full overflow-hidden cursor-pointer" onClick={() => setSelectedOp(op)}>
@@ -158,9 +167,12 @@ export default function OpportunitiesClient({ initialData, initialFilters }: Pro
                   <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent pointer-events-none" />
                   
                   {/* Category Label Overlay */}
-                  <div className="absolute top-4 left-4 bg-background/80 backdrop-blur-md px-3 py-1.5 rounded-full border border-white/10 uppercase tracking-widest text-[10px] text-primary">
+                  <Badge
+                    variant="outline"
+                    className="absolute top-4 left-4 overflow-visible bg-background/80 backdrop-blur-md px-3 py-1.5 border-white/10 uppercase tracking-widest text-[10px] font-normal text-primary"
+                  >
                     {tValue(op.category)}
-                  </div>
+                  </Badge>
                   
                   {/* Title & Location Overlay */}
                   <div className="absolute bottom-4 left-4 right-4 text-left pointer-events-none">
@@ -195,32 +207,34 @@ export default function OpportunitiesClient({ initialData, initialFilters }: Pro
                   </div>
 
                   <div className="flex space-x-2 pt-2">
-                    <button 
+                    <Button 
+                      variant="white"
                       onClick={() => { setSelectedOp(op); setApplyMode('apply'); }}
-                      className="flex-1 bg-white text-black hover:bg-white/90 text-sm py-2.5 rounded-lg transition-colors font-medium border border-transparent"
+                      className="h-auto flex-1 whitespace-normal rounded-lg border border-transparent px-0 py-2.5 transition-colors"
                     >
                       {t("applyNow")}
-                    </button>
+                    </Button>
                     {op.allowCounterProposal && (
-                      <button 
+                      <Button 
+                         variant="outline"
                          onClick={() => { setSelectedOp(op); setApplyMode('counter'); }}
-                         className="flex-1 bg-transparent hover:bg-card text-foreground text-sm py-2.5 rounded-lg transition-colors border border-border font-medium"
+                         className="h-auto flex-1 whitespace-normal rounded-lg border-border bg-transparent px-0 py-2.5 text-foreground shadow-none transition-colors hover:bg-card hover:text-foreground"
                       >
                         {t("counterProposal")}
-                      </button>
+                      </Button>
                     )}
                   </div>
                 </div>
-              </motion.div>
+              </MotionCard>
             ))}
           </AnimatePresence>
         </div>
 
         {filteredData.length === 0 && (
-          <div className="w-full py-32 text-center rounded-2xl border border-dashed border-border/50">
+          <Card className="w-full gap-0 py-32 text-center rounded-2xl border-dashed border-border/50 bg-transparent shadow-none">
             <h3 className="text-lg text-muted-foreground">{t("noOpportunities")}</h3>
             <p className="text-sm text-muted-foreground/60 mt-2">{t("tryWidening")}</p>
-          </div>
+          </Card>
         )}
       </div>
 

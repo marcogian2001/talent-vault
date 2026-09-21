@@ -8,7 +8,6 @@ interface Props {
   searchParams: Promise<{
     engagement?: string;
     category?: string;
-    geo?: string;
     compensation?: string;
   }>;
 }
@@ -19,7 +18,6 @@ export default async function OpportunitiesPage({ searchParams }: Props) {
   const engagementFilters = params.engagement ? params.engagement.split(",") : [];
   const categoryFilters = params.category ? params.category.split(",") : [];
   const compensationNumeric = params.compensation ? parseInt(params.compensation, 10) : undefined;
-  // const geoFilters = params.geo ? params.geo.split(",") : [];
 
   const conditions = [];
 
