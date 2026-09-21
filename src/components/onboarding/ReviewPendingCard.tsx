@@ -1,5 +1,4 @@
 import { Hourglass } from "lucide-react";
-import SignOutButton from "@/components/SignOutButton";
 import { LocalizedText } from "@/components/LocalizedText";
 import { Card } from "@/components/ui/card";
 
@@ -26,9 +25,6 @@ export default function ReviewPendingCard() {
         <p className="mt-3 text-xs text-muted-foreground/80">
           <LocalizedText tKey="reviewPendingEmailNote" />
         </p>
-        <div className="mt-8 border-t border-border/50 pt-6">
-          <SignOutButton />
-        </div>
       </Card>
     </>
   );

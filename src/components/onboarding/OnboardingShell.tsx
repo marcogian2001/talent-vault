@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
+import SignOutButton from "@/components/SignOutButton";
 
 /** The ambient background the qualification flow has always used, shared with the review screens. */
 export default function OnboardingShell({ children }: { children: React.ReactNode }) {
@@ -44,9 +45,11 @@ export default function OnboardingShell({ children }: { children: React.ReactNod
 
       <div className="z-10 w-full max-w-2xl py-12">
         {/* Switches the interface copy. The questions themselves are authored by the
-            academy in a single language. */}
-        <div className="mb-4 flex justify-end">
+            academy in a single language. Sign out lives here too so a chef is never stuck
+            in the flow on someone else's account. */}
+        <div className="mb-4 flex items-center justify-end gap-2">
           <LanguageSwitcher />
+          <SignOutButton />
         </div>
         {children}
       </div>
